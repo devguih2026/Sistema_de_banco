@@ -89,6 +89,8 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter', 
         'rest_framework.filters.OrderingFilter', 
     ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination', # define o estilo de paginação
+    'PAGE_SIZE': 10, # define quantos registros por página
 }
 
 SPECTACULAR_SETTINGS = {
